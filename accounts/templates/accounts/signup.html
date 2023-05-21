@@ -1,0 +1,23 @@
+{% extends 'layouts/base.html' %}
+
+
+
+    
+
+{% block body %}
+
+
+{% block content %}
+<div class="container">
+    <h1>Sign up</h1>
+    <form method="post">
+        {% csrf_token %}
+        {% include 'parts/form.html' %}
+      
+        <button type="submit" class="btn btn-primary">Create New User</button>
+    </form>
+</div>
+{% endblock content %}
+    
+
+{% endblock body %}
